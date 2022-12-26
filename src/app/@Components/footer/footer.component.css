@@ -1,0 +1,24 @@
+/* Local Styles - Footer */
+
+.footer-section {
+    height: 100px;
+}
+
+.footer-section .copyright {
+    display: flex;
+    color: rgb(135, 135, 135);
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+@media (max-width: 313px) {
+
+    .footer-section {
+        margin-top: 40px;
+    }
+
+}

@@ -1,0 +1,29 @@
+/* Local Styles - More Info */
+
+.more-info-section {
+    display: flex;
+    height: 100%;
+    background: rgb(40, 40, 40);
+}
+
+.title__info h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 30px;
+    left: 40px;
+    margin: 0 0 0 40px;
+    padding-top: 30px;
+}
+
+.description__info {
+    color: #fff;
+    font-size: 20px;
+    margin: 15px 40px;
+    line-height: 25px;
+    letter-spacing: .3px;
+}
+
+svg {
+    font-size: 40px;
+    padding-top: 10px;
+}

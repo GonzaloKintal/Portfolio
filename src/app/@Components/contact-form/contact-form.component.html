@@ -1,0 +1,48 @@
+<section class="contact-form">
+    <div class="form-card">
+        <div class="contact-form__title">
+            <h1>
+                <i class="fa-regular fa-message"></i>
+                Contactame
+            </h1>
+        </div>
+        <div class="contact-form__body">
+            <form action="enviar.php" method="post" [formGroup]="contactForm" class="contact-form__form">
+
+                <div class="form__body__entry">
+                    <span>Nombre *</span>
+                    <input formControlName="name" autocomplete="off" type="text" name="name" placeholder="Escriba su nombre" id="senderName" class="form__name">
+                </div>
+                <div *ngIf="name?.errors  && name?.touched">    
+                    <p *ngIf="name?.hasError('required')" class="error">
+                        El nombre es requerido.
+                    </p>
+                    <p *ngIf="name?.errors?.['minlength']" class="error">
+                        El nombre debe tener al menos 5 caracteres.
+                    </p>
+                </div>
+
+                <div class="form__body__entry">
+                    <span>E-mail *</span>
+                    <input formControlName="email" autocomplete="off" type="email" name="email" placeholder="Escriba su correo" id="senderEmail" class="form__email">
+                </div>
+                <div *ngIf="email?.errors  && email?.touched">    
+                    <p *ngIf="email?.hasError('required')" class="error">
+                        El email es requerido.
+                    </p>
+                    <p *ngIf="email?.hasError('email')" class="error">
+                        El formato del email debe ser válido.
+                      </p>
+                </div>
+
+                <div class="form__body__entry">
+                    <span>Mensaje *</span>
+                    <textarea formControlName="message" autocomplete="off" type="text" name="message" placeholder="Escriba su mensaje..." id="senderMessage" class="form__message"></textarea>
+                </div>
+
+                <input type="submit" class="form__body__submit-button" value="enviar">
+
+            </form>
+        </div>
+    </div>
+</section>

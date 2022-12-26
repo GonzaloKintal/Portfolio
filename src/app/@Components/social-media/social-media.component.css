@@ -1,0 +1,157 @@
+/* Local Styles - Social Media */
+
+.social-media-section {
+    background-color: rgb(96, 96, 96);;
+    height: 800px;
+    justify-content: center;
+}
+
+.social-media-card {
+    background-color: rgba(40, 40, 40, 0.9);
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    float: left;
+}
+
+.social-content {
+    padding: 20px 40px 0 40px;
+}
+
+.social__title {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.social__title h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.social__description {
+    display: flex;
+    margin-top: 10px
+}
+
+.social__media {
+    font-size: 20px;
+    color: rgb(142, 142, 142);
+    margin-top: 30px;
+    border-bottom: 1.5px solid rgb(142, 142, 142);
+    padding: 20px 30px;
+}
+
+.social__media h6 {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social__media svg {                     /* Iconos */
+    font-size: 22px;
+}
+
+.social__title svg {                     /* Iconos */
+    font-size: 50px;
+}
+
+.social__media a {
+    display: flex;
+    color: rgb(142, 142, 142);
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 170px;
+}
+
+.social__media a:hover {
+    text-decoration: underline;
+}
+
+.social__media p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.social__media:last-child {
+    border: none;
+}
+
+
+
+@media (max-width: 1215px) {
+
+    .social__title h1, .social__title svg {
+        font-size: 40px;
+    }
+    
+}
+
+
+@media (max-width: 1115px) {
+
+    .social__title h1, .social__title svg {
+        font-size: 35px;
+        margin-top: 6px;
+    }
+
+}
+
+
+@media (max-width: 920px) {
+
+    .social-media-card {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .social-media-section {
+        height: 1600px;
+    }
+
+    .social__title h1, .social__title svg {
+        font-size: 50px;
+    }
+
+}
+
+
+@media (max-width: 545px) {
+
+    .social__title h1, .social__title svg {
+        font-size: 40px;
+    }
+
+}
+
+
+@media (max-width: 455px) {
+
+    .social__title h1, .social__title svg {
+        font-size: 35px;
+    }
+
+}
+
+
+@media (max-width: 410px) {
+
+    .social__title h1, .social__title svg {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 366px) {
+
+    .social__title h1, .social__title svg {
+        font-size: 27px;
+    }
+
+}
